@@ -20,7 +20,7 @@ $brand-danger:          #c0392b;
 $brand-dark:            #222222;
 
 // Scaffolding /////////////////////////////////////////////////////////////////
-$body-bg:               $gray-dark; //#ecf0f1;
+$body-bg:               $brand-primary; //#ecf0f1;
 $header-bg-color:       $brand-dark;
 $footer-bg-color:       $header-bg-color;
 $text-color:            $brand-primary;
@@ -32,7 +32,7 @@ $link-hover-color:      darken($link-color, 15%);
 
 // Font Families
 // $font-family-sans-serif:    "omnes-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-sans-serif:    "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $font-family-serif:         'Kameron', Georgia, "Times New Roman", Times, serif;
 $font-family-serif:         Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -53,7 +53,7 @@ $font-size-h6:          ($font-size-base + 2);
 // Font weights
 $light: 100;
 $regular: 400;
-$bold: 800;
+$bold: 700;
 $xbold: 800;
 
 // Line Height
