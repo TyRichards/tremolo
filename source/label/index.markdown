@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "index"
-date: 2014-09-26 00:06
+title: "label"
+date: 2014-09-26 00:20
 comments: true
 sharing: true
 footer: true
