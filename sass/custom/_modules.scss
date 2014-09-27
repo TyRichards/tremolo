@@ -1,10 +1,27 @@
-.hero { 
-    padding: 120px 0;     
-    background-color: $brand-primary;
-    h1 { display: none; }
-    .logo-lg { margin-bottom: 50px; }
-    h1, h2, h3, h4, h5, h6, p { color: $brand-cream; }
+body {
+    -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    padding-top: $navbar-height;
 }
+
+a:hover, img:hover, i:hover {
+    -o-transition: color .2s ease-in-out, background 1s ease-in;
+    -ms-transition: color .2s ease-in-out, background 1s ease-in;
+    -moz-transition: color .2s ease-in-out, background 1s ease-in;
+    -webkit-transition: color .2s ease-in-out, background 1s ease-in;
+}
+
+.hero { 
+    padding: 155px 0;
+    background-color: $brand-primary;
+    // z-index: 1000;
+    h1 { display: none; }
+    .logo-lg { margin-bottom: 26px; }
+    h1, h2, h3, h4, h5, h6, p { color: $brand-cream; }
+    h2.subhead { margin-top: 16px; }
+}
+
+.home-page { margin-top: 480px; }
 
 .her-row {
     background: $brand-cream;
@@ -13,8 +30,59 @@
     padding: 12px 0px;
 }
 
-.btn {
+.btn, .nav-pills, .navbar-nav li a {
     text-transform: uppercase;
-    // font-weight: $bold;
+    font-weight: $bold;
     letter-spacing: 1px;
+}
+
+.subhead {
+    font-family: $font-family-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+// Center nav pills
+.navbar-center { text-align:center; }
+.navbar-center ul.nav-pills { display:inline-block; }
+.navbar-center li { display:inline; }
+.navbar-center a { float:left; }
+* html .navbar-center ul.nav-pills { display:inline; } /* IE6 */
+*+html .navbar-center ul.nav-pills { display:inline; } /* IE7 */
+
+.uppercase { text-transform: uppercase; }
+
+header .navbar {
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+    background-attachment: fixed;
+    background-clip: border-box;
+    // background-color: #323232;
+    background-image: url("/images/background.jpg");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: cover;
+    // margin: 0px;
+    // padding: 200px 0px;
+    // z-index: -1;
+    // height: 550px;
+    // text-align: center;
+    // color: white;
+    .navbar-collapse {
+        text-align: center;
+        .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;        
+            li a { 
+                color: $brand-cream;
+                font-size: 15px;
+                &:hover { color: $brand-secondary; }
+            }
+        }
+    }
 }

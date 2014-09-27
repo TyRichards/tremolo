@@ -5,11 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 {% include head.html %}
   <body>
-    {% include custom/header.html %}
-    <a href="/" class="home-icon" style="display:none;">
-      <img src="/images/home.png"/>
-    </a>
-
+    {% include custom/header-home.html %}
     {{ content | expand_urls: root_url }}
     {% include footer.html %}
   </body>
